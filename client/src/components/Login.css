@@ -1,0 +1,186 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+.loginpage {
+    position: relative;
+    width: 100vw; /* Set to viewport width */
+    height: 100vh; /* Set to viewport height */
+    background: #FFFFFF;
+    left: 30px;
+}
+
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+
+    position: absolute;
+    width: 276px;
+    height: auto; /* Set height to auto */
+    left: 64px;
+    top: 42px;
+}
+
+.loginimage {
+    position: absolute;
+    width: 500px; /* Decrease width for a smaller image */
+    height: auto; /* Set height to auto for responsive scaling */
+    left: 74px;
+    top: 140px;
+}
+
+.invite {
+    position: absolute;
+    width: 464px;
+    height: 28px;
+    left: 991px;
+    top: 90px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #313436;
+}
+.highlight{
+    color: #00A82E;
+}
+
+.subinvite {
+    position: absolute;
+    width: 212px;
+    height: 24px;
+    left: 1085px;
+    top: 140px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.userid,
+.number,
+.password {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 0px;
+    isolation: isolate;
+
+    position: absolute;
+    width: 440px;
+    height: 92px;
+}
+
+.userid {
+    left: 987px;
+    top: 210px;
+}
+
+.number {
+    left: 987px;
+    top: 325px;
+}
+
+.password {
+    left: 987px;
+    top: 435px;
+}
+
+.rectangle {
+    box-sizing: border-box;
+
+    width: 440px;
+    height: 69px;
+
+    background: #FFFFFF;
+    border: 1px solid #8AC0FF;
+    border-radius: 10px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+.subheading {
+    width: 45px;
+    height: 16px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+
+    color: #0C0C0C;
+
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+}
+
+.number .subheading {
+    width: 100%; 
+    max-width: 440px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+.loginbutton {
+    position: absolute;
+    width: 440px;
+    height: 51px;
+    left: 987px;
+    top: 570px;
+    position: absolute;
+    background: #00A82E;
+    box-shadow: 0px 4px 8px #C0C0C0;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    color: #FEFAFA;
+}
+
+.forgotpassword{
+    position: absolute;
+    left: 75.98%;
+    right: 4.37%;
+    top: 107.75%;
+    bottom: 34.52%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    color: #0C0C0C;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    width: 100%;
+}
+
