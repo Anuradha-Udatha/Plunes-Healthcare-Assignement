@@ -1,0 +1,150 @@
+.patient-status {
+    box-sizing: border-box;
+    position: absolute;
+    width: 655px;
+    height: 303px;
+    left: 22px;
+    top: 25px;
+    background: #FFFFFF;
+    border: 1px solid #C9C9C9;
+    border-radius: 10px;
+}
+
+.status-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 138px;
+    height: 40px;
+    left: 6px;
+    top: 15px;
+}
+
+.status-container {
+    position: relative;
+    margin-top: 60px;
+}
+
+/* Common styles for all status items */
+.status-item {
+    box-sizing: border-box;
+    position: absolute;
+    width: 302px;
+    height: 80px;
+    border-radius: 12px;
+}
+
+.status-item .status-number {
+    position: absolute;
+    width: 47px;
+    height: 46px;
+    left: 11px;
+    top: -8px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.status-item .status-title,
+.status-item .status-subtitle {
+    position: absolute;
+    left: 66px;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.status-item .status-title {
+    width: 111px;
+    height: 27px;
+    top: -10px;
+    font-weight: 700;
+    font-size: 18.32px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+}
+
+.status-item .status-subtitle {
+    width: 68px;
+    height: 24px;
+    top: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+/* Specific styles for Intimations */
+.intimations {
+    left: 25px;
+    top: -60px;
+    background: #FFF8E3;
+    border: 1px solid #D9D9D9;
+}
+
+.intimations .status-number {
+    background-color: #E5BF59;
+}
+
+.intimations .status-title,
+.intimations .status-subtitle {
+    color: #E5BF59;
+}
+
+/* Specific styles for Successful Claims */
+.successful-claims {
+    left: 336px;
+    top: -60px;
+    background: #DFFFDA;
+    border: 1px solid #D9D9D9;
+}
+
+.successful-claims .status-number {
+    background-color: #30C118;
+}
+
+.successful-claims .status-title,
+.successful-claims .status-subtitle {
+    color: #30C118;
+}
+.rejected-claims {
+    left: 25px;
+    top: 60px;
+    background: #FFEEEC;
+    border: 1px solid #D9D9D9;
+}
+
+.rejected-claims .status-number {
+    background: #F93C23;
+}
+
+.rejected-claims .status-title,
+.rejected-claims .status-subtitle {
+    color: #F93C23;
+}
+
+/* Specific styles for Successful Claims */
+.reimbursements {
+    left: 336px;
+    top: 60px;
+    background: #FBF1FF;
+    border: 1px solid #D9D9D9;
+}
+
+.reimbursements .status-number {
+    background: #A06DD6;
+}
+
+.reimbursements .status-title,
+.reimbursements .status-subtitle {
+    color: #A06DD6;
+}
+

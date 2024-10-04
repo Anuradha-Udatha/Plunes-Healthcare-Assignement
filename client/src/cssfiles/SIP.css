@@ -1,0 +1,73 @@
+.sip-container {
+    box-sizing: border-box;
+    position: absolute;
+    width: 653px;
+    height: 446px;
+    left: 23px;
+    top: 352px;
+    overflow-y: scroll;
+    background: #FFFFFF;
+    border: 1px solid #C9C9C9;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.sip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.sip-item {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    margin-top: 5px;
+}
+
+.sip-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #363535;
+}
+
+.sip-count {
+    width: 103px;
+    height: 36px;
+    background: #F1F6FF;
+    border: 1px solid #9AB0D8;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sip-count.orange {
+    background: #FFA500; /* Orange color */
+    border: 1px solid #FF8C00; /* Darker orange */
+}
+
+.sip-count.green {
+    background: #E0FFE0; /* Light green */
+    border: 1px solid #3CB371; /* Medium sea green */
+}
+
+.view-button {
+    width: 103px;
+    height: 36px;
+    background: #3788E5;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.view-button:hover {
+    background: #2A6EBD; /* Darker blue on hover */
+}

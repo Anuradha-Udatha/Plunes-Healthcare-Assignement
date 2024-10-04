@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './Login.css';
+import '../cssfiles/Login.css';
 import logo from '../assets/Frame 427320692.png';
 import loginimage from '../assets/3947041 1.png';
 
@@ -26,11 +26,25 @@ const Login = () => {
         }
     };
 
+    const handleMobileFocus = () => {
+        if (!mobileNo.startsWith('+91')) {
+            setMobileNo('+91 ');
+        }
+    };
+
+    const handleMobileChange = (e) => {
+        const input = e.target.value;
+        // Ensure that the mobile number starts with '+91' and limit the input length
+        if (input.length <= 14) { // Maximum length including '+91' and 10 digits
+            setMobileNo(input);
+        }
+    };
+
     return (
         <div className='loginpage'>
             <div className='logo'>
                 <img src={logo} alt="Logo" />
-                <img className='loginimage' src={loginimage} alt="Login image" /> {/* Ensure the image class is applied */}
+                <img className='loginimage' src={loginimage} alt="Login image" />
             </div>
             <div>
                 <form onSubmit={handleLogin}>
@@ -51,10 +65,11 @@ const Login = () => {
                         <p className='subheading'>Mobile No</p>
                         <input
                             className='rectangle'
-                            type="number"
+                            type="tel" // Use tel type for phone input
                             placeholder="Mobile No"
                             value={mobileNo}
-                            onChange={(e) => setMobileNo(e.target.value)}
+                            onFocus={handleMobileFocus} // Add focus handler
+                            onChange={handleMobileChange} // Use the change handler
                             required
                         />
                     </div>
@@ -70,7 +85,7 @@ const Login = () => {
                         />
                         <p className='forgotpassword'>Forgot Your Password?</p>
                     </div>
-                    <button className='loginbutton'type="submit">Log In</button>
+                    <button className='loginbutton' type="submit">Log In</button>
                 </form>
             </div>
         </div>

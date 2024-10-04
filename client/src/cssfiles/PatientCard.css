@@ -1,0 +1,121 @@
+/* Ensure the body can scroll */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;  /* Allows vertical scrolling */
+    overflow-x: hidden;  /* Prevents horizontal scrolling unless necessary */
+  }
+  
+  /* Scrollable container for content if needed */
+  .scrollable-content {
+    max-height: 100vh;  /* Viewport height */
+    overflow-y: auto;   /* Enable scrolling */
+  }
+  
+  /* Adjust cards or components for smooth scrolling */
+  .patient-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Adds space between cards */
+    padding: 20px;
+  }
+.patient-card {
+    position: relative;
+    width: 477.68px;
+    height: 211px;
+    background: #FFFFFF;
+    border: 1px solid #00A82E;
+    border-radius: 9.8px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13B2AD;
+    padding: 8px;
+    border-radius: 5px 5px 0 0;
+    color: white;
+  }
+  
+  .ip-number {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .patient-details {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .contact {
+    font-size: 14px;
+  }
+  
+  .details {
+    margin-top: 10px;
+    color: #696666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+  }
+  
+  .details p {
+    margin: 3px 0;
+  }
+  
+  .status-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .status-box {
+    width: 30%;
+    border: 1px solid #D2D2D2;
+    border-radius: 9.8px;
+    padding: 8px;
+    background-color: #F9F9F9;
+    text-align: center;
+  }
+  
+  .claim-status {
+    width: 35%;
+    border: 1px solid #D2D2D2;
+    border-radius: 9.8px;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .hospital-ops-status {
+    width: 35%;
+    border: 1px solid #D2D2D2;
+    border-radius: 9.8px;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .claim-status.initial-pending {
+    background-color: #ffecb3;
+    color: #f57c00;
+  }
+  
+  .claim-status.final-pending {
+    background-color: #ffccbc;
+    color: #d84315;
+  }
+  
+  .hospital-ops-status.yes {
+    background-color: #d9f9d7;
+    color: #00a82e;
+  }
+  
+  .hospital-ops-status.no {
+    background-color: #ffebee;
+    color: #d32f2f;
+  }
+  
