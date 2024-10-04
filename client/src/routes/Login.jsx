@@ -10,7 +10,6 @@ const Login = () => {
     const [mobileNo, setMobileNo] = useState(''); 
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
-
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
@@ -25,20 +24,17 @@ const Login = () => {
             alert('Invalid credentials');
         }
     };
-
     const handleMobileFocus = () => {
         if (!mobileNo.startsWith('+91')) {
             setMobileNo('+91 ');
         }
     };
-
     const handleMobileChange = (e) => {
         const input = e.target.value;
         if (input.length <= 14) { // Maximum length including '+91',space and 10 digits
             setMobileNo(input);
         }
     };
-
     return (
         <div className='loginpage'>
             <div className='logo'>

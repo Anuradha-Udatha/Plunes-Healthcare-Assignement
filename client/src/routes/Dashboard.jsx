@@ -37,11 +37,10 @@ const Dashboard = () => {
 
         fetchData();
     }, [navigate]);
-
+    
     if (loading) {
         return <div>Loading...</div>;
     }
-
     return (
         <div className="dashboard">
             <div className="dashboard-content">
@@ -62,5 +61,4 @@ const Dashboard = () => {
         </div>
     );
 };
-
 export default Dashboard;
