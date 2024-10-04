@@ -2,6 +2,7 @@ const express = require('express');
 const jwt = require('jsonwebtoken');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -9,14 +10,17 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 
-// Simulated user credentials with mobileNo
+// Simulated user credentials with mobileNo from environment variables
 const users = {
-    "Priyanshu.raj@Plunes.com" : { password: 'password', mobileNo: '+91 8507653666' }, // Default user
+    [process.env.DEFAULT_USER_EMAIL]: { 
+        password: process.env.DEFAULT_USER_PASSWORD, 
+        mobileNo: process.env.DEFAULT_USER_MOBILE 
+    },
     // You can add more users here if needed
 };
 
-// Secret key for JWT
-const SECRET_KEY = 'your_secret_key';
+// Secret key for JWT from environment variable
+const SECRET_KEY = process.env.SECRET_KEY;
 
 // Login route
 app.post('/login', (req, res) => {
