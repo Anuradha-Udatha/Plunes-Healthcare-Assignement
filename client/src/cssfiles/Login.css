@@ -7,13 +7,11 @@ body {
 
 .loginpage {
     position: relative;
-    width: 100vw; /* Set to viewport width */
-    height: 100vh; /* Set to viewport height */
+    width: 100vw; 
+    height: 100vh; 
     background: #FFFFFF;
     left: 30px;
 }
-
-
 
 .logo {
     display: flex;
@@ -24,15 +22,15 @@ body {
 
     position: absolute;
     width: 276px;
-    height: auto; /* Set height to auto */
+    height: auto;
     left: 64px;
     top: 42px;
 }
 
 .loginimage {
     position: absolute;
-    width: 500px; /* Decrease width for a smaller image */
-    height: auto; /* Set height to auto for responsive scaling */
+    width: 500px; 
+    height: auto; 
     left: 74px;
     top: 140px;
 }

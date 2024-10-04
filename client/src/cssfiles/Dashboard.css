@@ -1,44 +1,42 @@
-/* Dashboard.css */
-
 .dashboard-content {
     display: flex;
-    justify-content: space-between; /* Ensures space between the two sections */
+    justify-content: space-between; 
     width: 100%;
 }
 
 .dashboard-section {
-    width: 50%; /* Left column (PatientStatus) */
+    width: 50%; 
     padding: 20px;
 }
 
 .cards-container {
-    width: 50%; /* Right column (Patient cards) */
+    width: 50%; 
     padding: 20px;
-    overflow-y: auto; /* Add scrolling if there are too many cards */
-    max-height: 100vh; /* Ensures cards don’t overflow the page */
+    overflow-y: auto; 
+    max-height: 100vh; 
 }
 .logoutbutton {
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px 15px; /* Padding for better spacing */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
 }
 
 .logoutbutton:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049; 
 }
 
-/* Assuming the button is in a flex container to align it to the right */
+
 .dashboard {
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Space between items */
-    align-items: center; /* Center items vertically */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
 }
 
 .dashboard .logoutbutton {
-    margin-left: auto; /* Push the button to the extreme right */
+    margin-left: auto; 
 }

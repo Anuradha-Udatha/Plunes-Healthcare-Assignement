@@ -28,7 +28,6 @@
     margin-top: 60px;
 }
 
-/* Common styles for all status items */
 .status-item {
     box-sizing: border-box;
     position: absolute;
@@ -82,7 +81,7 @@
     align-items: center;
 }
 
-/* Specific styles for Intimations */
+
 .intimations {
     left: 25px;
     top: -60px;
@@ -99,7 +98,7 @@
     color: #E5BF59;
 }
 
-/* Specific styles for Successful Claims */
+
 .successful-claims {
     left: 336px;
     top: -60px;
@@ -131,7 +130,6 @@
     color: #F93C23;
 }
 
-/* Specific styles for Successful Claims */
 .reimbursements {
     left: 336px;
     top: 60px;

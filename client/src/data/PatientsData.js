@@ -59,6 +59,18 @@ const patientsData = [
     admittedDate: "07-Mar-2024",
     claimStatus: "In Process",
     hospitalOpsStatus: "Yes",
+  },
+  {
+    id: 6,
+    name: "Sonal Aggarwal",
+    age: 39,
+    contact: "8523697412",
+    serviceProvider: "New India Assurance",
+    hospital: "AIIMS Delhi",
+    treatment: "Kidney Transplant",
+    admittedDate: "07-Mar-2024",
+    claimStatus: "In Process",
+    hospitalOpsStatus: "Yes",
   }
 ];
 

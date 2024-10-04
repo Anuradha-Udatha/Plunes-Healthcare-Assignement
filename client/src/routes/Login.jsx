@@ -34,8 +34,7 @@ const Login = () => {
 
     const handleMobileChange = (e) => {
         const input = e.target.value;
-        // Ensure that the mobile number starts with '+91' and limit the input length
-        if (input.length <= 14) { // Maximum length including '+91' and 10 digits
+        if (input.length <= 14) { // Maximum length including '+91',space and 10 digits
             setMobileNo(input);
         }
     };
@@ -65,7 +64,7 @@ const Login = () => {
                         <p className='subheading'>Mobile No</p>
                         <input
                             className='rectangle'
-                            type="tel" // Use tel type for phone input
+                            type="tel" 
                             placeholder="Mobile No"
                             value={mobileNo}
                             onFocus={handleMobileFocus} // Add focus handler

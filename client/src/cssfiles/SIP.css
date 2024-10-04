@@ -50,13 +50,13 @@
 }
 
 .sip-count.orange {
-    background: #FFA500; /* Orange color */
-    border: 1px solid #FF8C00; /* Darker orange */
+    background: #FFA500; 
+    border: 1px solid #FF8C00; 
 }
 
 .sip-count.green {
-    background: #E0FFE0; /* Light green */
-    border: 1px solid #3CB371; /* Medium sea green */
+    background: #E0FFE0; 
+    border: 1px solid #3CB371;
 }
 
 .view-button {
@@ -69,5 +69,5 @@
     cursor: pointer;
 }
 .view-button:hover {
-    background: #2A6EBD; /* Darker blue on hover */
+    background: #2A6EBD; 
 }

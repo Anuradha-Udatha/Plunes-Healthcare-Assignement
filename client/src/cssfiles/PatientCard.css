@@ -1,23 +1,21 @@
-/* Ensure the body can scroll */
 body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-y: auto;  /* Allows vertical scrolling */
-    overflow-x: hidden;  /* Prevents horizontal scrolling unless necessary */
+    overflow-y: auto;  
+    overflow-x: hidden;  
   }
   
-  /* Scrollable container for content if needed */
   .scrollable-content {
-    max-height: 100vh;  /* Viewport height */
-    overflow-y: auto;   /* Enable scrolling */
+    max-height: 100vh;  
+    overflow-y: auto;  
   }
   
-  /* Adjust cards or components for smooth scrolling */
+
   .patient-card-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;  /* Adds space between cards */
+    gap: 20px;  
     padding: 20px;
   }
 .patient-card {

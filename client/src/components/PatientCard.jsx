@@ -1,4 +1,3 @@
-// src/components/PatientCard.jsx
 import React from 'react';
 import '../cssfiles/PatientCard.css';
 

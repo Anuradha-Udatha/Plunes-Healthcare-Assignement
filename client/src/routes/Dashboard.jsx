@@ -14,7 +14,7 @@ const Dashboard = () => {
     useEffect(() => {
         const token = localStorage.getItem('token');
         if (!token) {
-            navigate('/login'); // Redirect if no token
+            navigate('/login'); // Redirecting if no token
             return;
         }
 
@@ -27,8 +27,8 @@ const Dashboard = () => {
                 console.error("Error during fetch:", error.response || error);
 
                 if (error.response && error.response.status === 401) {
-                    localStorage.removeItem('token'); // Clear invalid token
-                    navigate('/login'); // Redirect to login on auth error
+                    localStorage.removeItem('token'); 
+                    navigate('/login'); 
                 }
             } finally {
                 setLoading(false);
